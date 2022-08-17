@@ -1,4 +1,4 @@
-package com.razib.androidfragment;
+package com.razib.androidfragment.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,10 +8,11 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
+import com.razib.androidfragment.R;
 
 
-public class TwoFragment extends Fragment {
-    TextView sname,sdob,sgender;
+public class SecondFragment extends Fragment {
+   private TextView mName, mDob, mGender;
 
 
     @Override
@@ -20,22 +21,20 @@ public class TwoFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_two, container, false);
 
-        sname=view.findViewById(R.id.sname);
-        sdob=view.findViewById(R.id.sdob);
-        sgender=view.findViewById(R.id.sgender);
+        mName = view.findViewById(R.id.sname);
+        mDob = view.findViewById(R.id.sdob);
+        mGender = view.findViewById(R.id.sgender);
 
-       Bundle bundle = this.getArguments();
+        Bundle bundle = this.getArguments();
 
         String name = bundle.getString("NAME");
         String dateOfBirth = bundle.getString("DOB");
-        String gender = bundle .getString("GENDER");
+        String gender = bundle.getString("GENDER");
 
 
-
-
-        sname.setText("Name: "+ name);
-        sdob.setText("Selected Date: "+ dateOfBirth);
-        sgender.setText("Gender Is: "+ gender);
+        mName.setText("Name: " + name);
+        mDob.setText("Selected Date: " + dateOfBirth);
+        mGender.setText("Gender Is: " + gender);
 
         return view;
     }

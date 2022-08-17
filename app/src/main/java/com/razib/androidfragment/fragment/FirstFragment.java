@@ -1,4 +1,4 @@
-package com.razib.androidfragment;
+package com.razib.androidfragment.fragment;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
@@ -16,10 +16,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 
+import com.razib.androidfragment.R;
+
 import java.util.Calendar;
 
 
-public class OneFragment extends Fragment implements AdapterView.OnItemSelectedListener, View.OnClickListener {
+public class FirstFragment extends Fragment implements AdapterView.OnItemSelectedListener, View.OnClickListener {
     Spinner spinnerGender;
     String[] gender = { "Select","Male", "Female" ,"Others"};
 
@@ -90,7 +92,7 @@ public class OneFragment extends Fragment implements AdapterView.OnItemSelectedL
 
 
                     AppCompatActivity activity = (AppCompatActivity) view.getContext();
-                    Fragment twoFragment = new TwoFragment();
+                    Fragment twoFragment = new SecondFragment();
 
                     Bundle bundle = new Bundle();
                     bundle.putString("NAME",name);
