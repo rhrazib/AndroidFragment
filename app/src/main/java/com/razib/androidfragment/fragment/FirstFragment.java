@@ -39,7 +39,7 @@ public class FirstFragment extends Fragment implements AdapterView.OnItemSelecte
         // Inflate the layout for this fragment
         // return
 
-        View view = inflater.inflate(R.layout.fragment_one, container, false);
+        View view = inflater.inflate(R.layout.fragment_first, container, false);
 
         spinnerGender = view.findViewById(R.id.spinner);
         spinnerGender.setOnItemSelectedListener(this);

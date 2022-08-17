@@ -19,7 +19,7 @@ public class SecondFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_two, container, false);
+        View view = inflater.inflate(R.layout.fragment_second, container, false);
 
         mName = view.findViewById(R.id.nameTv);
         mDob = view.findViewById(R.id.dobTv);
