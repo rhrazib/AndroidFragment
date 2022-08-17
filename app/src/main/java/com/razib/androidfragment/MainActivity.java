@@ -1,8 +1,9 @@
-package com.example.androidfragment;
+package com.razib.androidfragment;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.androidfragment;
+package com.razib.androidfragment;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
@@ -14,6 +14,7 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+
 
 import java.util.Calendar;
 

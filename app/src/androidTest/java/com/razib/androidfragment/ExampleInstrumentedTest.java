@@ -1,4 +1,4 @@
-package com.example.androidfragment;
+package com.razib.androidfragment;
 
 import android.content.Context;
 
