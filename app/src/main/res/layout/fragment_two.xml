@@ -11,21 +11,21 @@
         android:orientation="vertical"
         android:layout_margin="40sp">
         <TextView
-            android:id="@+id/sname"
+            android:id="@+id/nameTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="MissingConstraints">
 
         </TextView>
         <TextView
-            android:id="@+id/sdob"
+            android:id="@+id/dobTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="MissingConstraints">
 
         </TextView>
         <TextView
-            android:id="@+id/sgender"
+            android:id="@+id/genderTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:ignore="MissingConstraints">
