@@ -22,11 +22,11 @@ import java.util.Calendar;
 
 
 public class FirstFragment extends Fragment implements AdapterView.OnItemSelectedListener, View.OnClickListener {
-   private Spinner spinnerGender;
-    private   String[] gender = { "Select","Male", "Female" ,"Others"};
+    private Spinner spinnerGender;
+    private String[] gender = {"Select", "Male", "Female", "Others"};
 
     private DatePickerDialog picker;
-    private  EditText dateOfBirth,sname;
+    private EditText dateOfBirth, sname;
     private Button sendBtn;
     private boolean isAllFieldsChecked = false;
 
@@ -35,7 +35,7 @@ public class FirstFragment extends Fragment implements AdapterView.OnItemSelecte
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // setContentView(R.layout.fragment_one);
+        // setContentView(R.layout.fragment_one);
         // Inflate the layout for this fragment
         // return
 
@@ -43,12 +43,12 @@ public class FirstFragment extends Fragment implements AdapterView.OnItemSelecte
 
         spinnerGender = view.findViewById(R.id.spinner);
         spinnerGender.setOnItemSelectedListener(this);
-        ArrayAdapter aa = new ArrayAdapter(getContext(),android.R.layout.simple_spinner_item,gender);
+        ArrayAdapter aa = new ArrayAdapter(getContext(), android.R.layout.simple_spinner_item, gender);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerGender.setAdapter(aa);
 
 
-        dateOfBirth=view.findViewById(R.id.dob);
+        dateOfBirth = view.findViewById(R.id.dob);
         // dateOfBirth.setInputType(InputType.TYPE_NULL);
         dateOfBirth.setCursorVisible(false);
         dateOfBirth.setFocusable(false);
@@ -74,16 +74,16 @@ public class FirstFragment extends Fragment implements AdapterView.OnItemSelecte
 
 
         });
-        sendBtn=view.findViewById(R.id.save);
+        sendBtn = view.findViewById(R.id.save);
         sendBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sname=view.findViewById(R.id.name);
+                sname = view.findViewById(R.id.name);
 
                 String itemText = (String) spinnerGender.getSelectedItem();
 
-                String name=sname.getText().toString();
-                String dobirth=dateOfBirth.getText().toString();
+                String name = sname.getText().toString();
+                String dobirth = dateOfBirth.getText().toString();
 
                 isAllFieldsChecked = CheckAllFields();
 
@@ -95,11 +95,11 @@ public class FirstFragment extends Fragment implements AdapterView.OnItemSelecte
                     Fragment twoFragment = new SecondFragment();
 
                     Bundle bundle = new Bundle();
-                    bundle.putString("NAME",name);
-                    bundle.putString("DOB",dobirth);
-                    bundle.putString("GENDER",itemText);
+                    bundle.putString("NAME", name);
+                    bundle.putString("DOB", dobirth);
+                    bundle.putString("GENDER", itemText);
                     twoFragment.setArguments(bundle);
-                  //  getChildFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,twoFragment).commit();
+                    //  getChildFragmentManager().beginTransaction().replace(R.id.fragmentContainerView,twoFragment).commit();
                     activity.getSupportFragmentManager().beginTransaction().replace(R.id.fragmentContainerView, twoFragment).addToBackStack(null).commit();
 
 
