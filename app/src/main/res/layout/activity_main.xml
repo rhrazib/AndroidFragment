@@ -6,36 +6,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.razib.androidfragment.MainActivity" >
-
-    <!--    <LinearLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_margin="20dp"-->
-    <!--        android:orientation="horizontal"-->
-    <!--        android:padding="10dp">-->
-
-    <!--        <Button-->
-    <!--            android:id="@+id/btnOne"-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_weight="1"-->
-    <!--            android:text="ONE" />-->
-
-    <!--        <Button-->
-    <!--            android:id="@+id/btnTwo"-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_weight="1"-->
-    <!--            android:text="TWO" />-->
-
-    <!--        <Button-->
-    <!--            android:id="@+id/btnThree"-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_weight="1"-->
-    <!--            android:text="THREE" />-->
-    <!--    </LinearLayout>-->
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -47,7 +17,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
-
         </FrameLayout>
 
     </LinearLayout>
