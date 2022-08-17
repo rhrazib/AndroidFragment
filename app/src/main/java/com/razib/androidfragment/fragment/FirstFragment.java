@@ -22,13 +22,13 @@ import java.util.Calendar;
 
 
 public class FirstFragment extends Fragment implements AdapterView.OnItemSelectedListener, View.OnClickListener {
-    Spinner spinnerGender;
-    String[] gender = { "Select","Male", "Female" ,"Others"};
+   private Spinner spinnerGender;
+    private   String[] gender = { "Select","Male", "Female" ,"Others"};
 
-    DatePickerDialog picker;
-    EditText dateOfBirth,sname;
-    Button sendBtn;
-    boolean isAllFieldsChecked = false;
+    private DatePickerDialog picker;
+    private  EditText dateOfBirth,sname;
+    private Button sendBtn;
+    private boolean isAllFieldsChecked = false;
 
 
     @Override
